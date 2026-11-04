@@ -30,7 +30,7 @@ The project uses mock login and browser `localStorage` for data persistence. No 
 - Responsive interface for desktop and mobile.
 - Data persistence using localStorage.
 - Loading, empty and error states.
-- Search and status filtering.
+- Status filtering.
 - Assignment sorting.
 - Overdue assignment highlighting.
 
