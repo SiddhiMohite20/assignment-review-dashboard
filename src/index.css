@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply text-ink antialiased;
+  background:
+    radial-gradient(600px 400px at 100% 0%, #ffe4ef 0%, transparent 60%),
+    radial-gradient(700px 500px at 0% 100%, #dff5ff 0%, transparent 60%),
+    #f8f6ff;
+  background-attachment: fixed;
+}
+.btn { @apply inline-flex items-center justify-center rounded-xl px-4 py-2 text-sm font-semibold transition focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 disabled:opacity-50; }
+.btn-primary { @apply btn bg-gradient-to-r from-brand to-fuchsia-500 text-white shadow-soft hover:brightness-110; }
+.btn-ghost { @apply btn border border-violet-200 bg-white text-ink hover:bg-brand-soft; }
+.btn-danger { @apply btn bg-rose-500 text-white hover:bg-rose-600; }
+.input { @apply w-full rounded-xl border border-violet-200 bg-white px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand; }
+@keyframes pop { from { opacity: 0; transform: scale(.96); } to { opacity: 1; transform: none; } }
+.pop { animation: pop .15s ease-out; }
+@media (prefers-reduced-motion: reduce) { .pop { animation: none; } }
